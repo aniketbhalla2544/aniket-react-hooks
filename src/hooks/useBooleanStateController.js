@@ -5,9 +5,9 @@ export default function useBooleanStateController(initialVal) {
 
   const stateBooleanHandler = useMemo(
     () => ({
-      setBooleanStateTrue: () => setstate(true),
-      setBooleanStateFalse: () => setstate(false),
-      toggleBooleanState: () => setstate((prevState) => !prevState),
+      setTrue: () => setstate(true),
+      setFalse: () => setstate(false),
+      setToggle: () => setstate((prevState) => !prevState),
     }),
     []
   );
